@@ -71,7 +71,7 @@
   font-size: 100px;
   font-weight: bold;
   line-height: 1;
-  letter-spacing: 0.3em; 
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
@@ -81,20 +81,14 @@
 
 .aligned-text_center {
   text-align: center;
-  padding-left: 60px;
+  padding-left: 0;
+  margin-left: -30px;
 }
 
 .aligned-text_right {
   text-align: right;
-  padding-right: 30px;
-}
-
-.letter-spacing-extended {
-  letter-spacing: inherit; 
-}
-
-.no-letter-spacing {
-  letter-spacing: inherit; 
+  padding-right: 0;
+  margin-right: -60px;
 }
 
 .cover__description {
@@ -123,12 +117,12 @@
 }
 
 .lots {
-  padding: 180px 50px;
+  padding: 180px 24px;
 }
 
 .lots__heading {
   margin-bottom: 27px;
-  margin-left: 40px;
+  margin-left: 16px;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -138,11 +132,13 @@
   gap: 25px;
   list-style: none;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .lots__card-list-item {
-  flex: 1;
+  width: 334px;
   min-height: 450px;
+  flex-shrink: 0;
 }
 
 .card-link {
@@ -196,17 +192,18 @@
 }
 
 .lots__look-more-link {
-  margin-left: 40px;
+  margin-left: 16px;
   font-size: 20px;
   text-underline-offset: 4px;
 }
 
 .about {
   display: grid;
-  grid-template-columns: 430px 1fr;
-  gap: 25px;
-  padding: 0 50px 180px;
+  grid-template-columns: 240px 1fr;
+  gap: 72px;
+  padding: 60px 50px 180px;
   align-items: start;
+  margin-left: 24px;
 }
 
 .about__column {
@@ -235,17 +232,13 @@
   width: 148px;
 }
 
-.about__column:last-child {
-  justify-content: flex-start;
-}
-
 .about__title {
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   line-height: normal;
-  margin-top: 0; 
-  white-space: nowrap; 
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 .about__text {
@@ -268,6 +261,9 @@
   font-size: 18px;
   line-height: 1.35;
   text-underline-offset: 4px;
+  width: 264.57px; 
+  height: 98px;
+  box-sizing: border-box;
 }
 
 .footer__menu {
@@ -284,6 +280,7 @@
 .footer__menu-link {
   font-size: 18px;
   text-underline-offset: 4px;
+  white-space: nowrap; 
 }
 
 .footer__menu-link_active {
